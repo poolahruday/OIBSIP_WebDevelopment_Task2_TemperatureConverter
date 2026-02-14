@@ -1,40 +1,40 @@
-# OIBSIP_WebDevelopment_Task2_Portfolio
+# OIBSIP_WebDevelopment_Task3_TemperatureConverter
 
-##  Project Title
-Personal Portfolio Website
+## 🔷 Project Title
+Temperature Converter Web Application
 
 ##  Objective
-The objective of this project is to create a personal portfolio website to showcase skills, projects, and contact details in a professional manner.
+The objective of this project is to build a temperature converter that converts values between Celsius and Fahrenheit using JavaScript.
 
 ##  Features
-- About Me Section
-- Skills Section
-- Projects Showcase
-- Contact Information
-- Responsive Design
-- Professional UI Design
+- User Input Field
+- Unit Selection (Celsius / Fahrenheit)
+- Convert Button
+- Input Validation
+- Real-time Conversion Result
+- Clean UI Design
 
 ##  Technologies Used
 - HTML5
 - CSS3
-- JavaScript (if used)
+- JavaScript
 
 ##  Steps Performed
-1. Designed layout structure.
-2. Created different sections (About, Skills, Projects).
-3. Styled website with modern color scheme.
-4. Implemented responsive design.
-5. Tested across multiple devices.
+1. Designed input form layout.
+2. Added dropdown for unit selection.
+3. Implemented conversion logic using JavaScript.
+4. Added input validation.
+5. Styled application using CSS.
 
 ##  How to Run the Project
 1. Download or clone the repository.
 2. Open index.html in your browser.
 
 ##  Outcome
-Successfully developed a professional personal portfolio website showcasing skills and projects.
+Successfully created a working temperature converter with proper validation and conversion functionality.
 
 ##  Internship Details
 Domain: Web Development  
 Organization: Oasis Infobyte (OIBSIP)  
 Level: 1  
-Task: Portfolio Website
+Task: Temperature Converter
