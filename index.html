@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="converter-container" role="main">
+        <header class="header">
+            <div class="temperature-icon" aria-hidden="true">🌡️</div>
+            <h1>Temperature Converter</h1>
+            <p>Enter temperature to see all units instantly</p>
+        </header>
+
+        <form class="input-group" novalidate>
+            <div class="input-wrapper">
+                <label for="temperatureInput" class="input-label">Temperature Value</label>
+                <input 
+                    type="number" 
+                    id="temperatureInput" 
+                    class="input-field" 
+                    placeholder="Enter temperature"
+                    step="any"
+                    aria-describedby="error-message"
+                >
+                <div id="error-message" class="error-message" role="alert">
+                    Please enter a valid number
+                </div>
+            </div>
+
+            <label class="input-label">Input Unit</label>
+            <div class="unit-selectors" role="radiogroup" aria-label="Select input unit">
+                <button type="button" class="unit-btn active" data-unit="celsius" role="radio" aria-checked="true" tabindex="0">
+                    °C
+                </button>
+                <button type="button" class="unit-btn" data-unit="fahrenheit" role="radio" aria-checked="false" tabindex="-1">
+                    °F
+                </button>
+                <button type="button" class="unit-btn" data-unit="kelvin" role="radio" aria-checked="false" tabindex="-1">
+                    K
+                </button>
+            </div>
+
+            <button type="submit" class="convert-btn" id="convertBtn">
+                Show All Units
+            </button>
+        </form>
+
+        <section class="result-section" aria-live="polite" id="resultSection">
+            <div class="multi-results" id="multiResults">
+                <div class="result-item" data-unit="celsius">
+                    <span class="result-value" id="resultCelsius">--</span>
+                    <span class="result-unit">°C</span>
+                </div>
+                <div class="result-item" data-unit="fahrenheit">
+                    <span class="result-value" id="resultFahrenheit">--</span>
+                    <span class="result-unit">°F</span>
+                </div>
+                <div class="result-item" data-unit="kelvin">
+                    <span class="result-value" id="resultKelvin">--</span>
+                    <span class="result-unit">K</span>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 Temperature Converter Pro. All units displayed simultaneously.</p>
+        </footer>
+    </main>
+
+    <script src="js/converter.js"></script>
+</body>
+</html>
