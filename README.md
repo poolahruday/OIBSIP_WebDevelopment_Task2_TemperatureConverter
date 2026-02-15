@@ -1,6 +1,6 @@
 # OIBSIP_WebDevelopment_Task3_TemperatureConverter
 
-## 🔷 Project Title
+##  Project Title
 Temperature Converter Web Application
 
 ##  Objective
